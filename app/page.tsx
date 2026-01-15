@@ -31,15 +31,16 @@ export default function HomePage() {
             Transforming spaces across Northern Colorado into dreams
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-gray-500 hover:bg-blue-gray-600 text-white text-lg px-8 py-6 h-auto">
-              Get Free Quote
+            <Button asChild size="lg" className="bg-blue-gray-500 hover:bg-blue-gray-600 text-white text-lg px-8 py-6 h-auto">
+              <a href="#contact">Get Free Quote</a>
             </Button>
             <Button
+              asChild
               size="lg"
               variant="outline"
               className="bg-transparent text-white border-2 border-white hover:bg-white/10 text-lg px-8 py-6 h-auto"
             >
-              View Our Work
+              <a href="#portfolio">View Our Work</a>
             </Button>
           </div>
         </div>
@@ -68,8 +69,8 @@ export default function HomePage() {
                 Let us help you turn your aspirations into reality with our expert guidance and support. Contact us
                 today to get started!
               </p>
-              <Button size="lg" className="mt-4">
-                Learn More About Us
+              <Button asChild size="lg" className="mt-4">
+                <a href="#contact">Learn More About Us</a>
               </Button>
             </div>
           </div>
