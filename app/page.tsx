@@ -30,7 +30,7 @@ export default function HomePage() {
             Transforming spaces across Northern Colorado into dreams
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-cyan-500 hover:bg-cyan-600 text-white text-lg px-8 py-6 h-auto">
+            <Button size="lg" className="bg-blue-gray-500 hover:bg-blue-gray-600 text-white text-lg px-8 py-6 h-auto">
               Get Free Quote
             </Button>
             <Button
@@ -245,7 +245,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section id="contact" className="py-20 bg-cyan-500 text-white">
+      <section id="contact" className="py-20 bg-blue-gray-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">Ready to Transform Your Space?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto text-pretty">

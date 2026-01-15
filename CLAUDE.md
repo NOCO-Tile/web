@@ -79,7 +79,7 @@ import { cn } from "@/lib/utils"
 - **Custom Variant**: `.dark` class variant for dark mode styling
 - **Utilities**:
   - `cn()` function in `lib/utils.ts` for conditional class merging
-  - Custom cyan color utilities (cyan-500, cyan-600) for brand accent
+  - Custom blue-gray color utilities (blue-gray-500, blue-gray-600) for brand accent
 - **Animations**: `tw-animate-css` plugin for additional animations
 
 ### Component Patterns
@@ -98,7 +98,7 @@ Single-page marketing site with sections:
 - About (two-column layout with image)
 - Services (3-card grid)
 - Portfolio (6-item grid)
-- Contact/CTA (cyan accent background)
+- Contact/CTA (blue-gray accent background)
 - Footer
 
 ## Configuration Notes
@@ -126,7 +126,7 @@ Single-page marketing site with sections:
 - **Deployment**: Configured as a static site - the `out/` directory after build contains the complete site
 - Phone number: (970) 685-8897
 - Email: info@mysite.com (placeholder)
-- Brand color: Cyan (specifically cyan-500 and cyan-600)
+- Brand color: Blue-gray (specifically blue-gray-500 and blue-gray-600)
 - Serves: Fort Collins, Loveland, Greeley, Windsor, CO areas
 
 ## Static Site Deployment

@@ -31,7 +31,7 @@ export function Header() {
           {/* Right side - Theme toggle and phone */}
           <div className="flex items-center gap-4">
             <ThemeToggle />
-            <Button asChild className="bg-cyan-500 hover:bg-cyan-600 text-white">
+            <Button asChild className="bg-blue-gray-500 hover:bg-blue-gray-600 text-white">
               <a href="tel:9706858897" className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
                 (970) 685-8897
