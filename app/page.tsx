@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card"
 import { Header } from "@/components/header"
 import { Phone, Mail } from "lucide-react"
 import Image from "next/image"
+import { assetPath } from "@/lib/base-path"
 
 export default function HomePage() {
   return (
@@ -15,7 +16,7 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero-bathroom.jpg"
+            src={assetPath("/images/hero-bathroom.jpg")}
             alt="Luxury bathroom tile work"
             fill
             className="object-cover"
@@ -50,7 +51,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="/images/bathroom-modern.jpg"
+                src={assetPath("/images/bathroom-modern.jpg")}
                 alt="Modern bathroom tile installation"
                 fill
                 className="object-cover"
@@ -89,7 +90,7 @@ export default function HomePage() {
             <Card className="overflow-hidden group hover:shadow-xl transition-all duration-300">
               <div className="aspect-[4/3] relative overflow-hidden">
                 <Image
-                  src="/images/hero-bathroom.jpg"
+                  src={assetPath("/images/hero-bathroom.jpg")}
                   alt="Bathroom tile installation"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -106,7 +107,7 @@ export default function HomePage() {
             <Card className="overflow-hidden group hover:shadow-xl transition-all duration-300">
               <div className="aspect-[4/3] relative overflow-hidden">
                 <Image
-                  src="/images/kitchen-backsplash.jpg"
+                  src={assetPath("/images/kitchen-backsplash.jpg")}
                   alt="Kitchen tile installation"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -123,7 +124,7 @@ export default function HomePage() {
             <Card className="overflow-hidden group hover:shadow-xl transition-all duration-300">
               <div className="aspect-[4/3] relative overflow-hidden">
                 <Image
-                  src="/images/floor-tile.jpg"
+                  src={assetPath("/images/floor-tile.jpg")}
                   alt="Floor tile installation"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -154,7 +155,7 @@ export default function HomePage() {
             <Card className="overflow-hidden group cursor-pointer">
               <div className="aspect-square relative overflow-hidden">
                 <Image
-                  src="/images/hero-bathroom.jpg"
+                  src={assetPath("/images/hero-bathroom.jpg")}
                   alt="Modern bathroom with elegant tile work"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -169,7 +170,7 @@ export default function HomePage() {
             <Card className="overflow-hidden group cursor-pointer">
               <div className="aspect-square relative overflow-hidden">
                 <Image
-                  src="/images/bathroom-modern.jpg"
+                  src={assetPath("/images/bathroom-modern.jpg")}
                   alt="Contemporary bathroom renovation"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -184,7 +185,7 @@ export default function HomePage() {
             <Card className="overflow-hidden group cursor-pointer">
               <div className="aspect-square relative overflow-hidden">
                 <Image
-                  src="/images/kitchen-backsplash.jpg"
+                  src={assetPath("/images/kitchen-backsplash.jpg")}
                   alt="Custom kitchen backsplash"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -199,7 +200,7 @@ export default function HomePage() {
             <Card className="overflow-hidden group cursor-pointer">
               <div className="aspect-square relative overflow-hidden">
                 <Image
-                  src="/images/floor-tile.jpg"
+                  src={assetPath("/images/floor-tile.jpg")}
                   alt="Beautiful floor tile installation"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -214,7 +215,7 @@ export default function HomePage() {
             <Card className="overflow-hidden group cursor-pointer">
               <div className="aspect-square relative overflow-hidden">
                 <Image
-                  src="/images/hero-bathroom.jpg"
+                  src={assetPath("/images/hero-bathroom.jpg")}
                   alt="Shower tile project"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -229,7 +230,7 @@ export default function HomePage() {
             <Card className="overflow-hidden group cursor-pointer">
               <div className="aspect-square relative overflow-hidden">
                 <Image
-                  src="/images/kitchen-backsplash.jpg"
+                  src={assetPath("/images/kitchen-backsplash.jpg")}
                   alt="Entryway tile design"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
