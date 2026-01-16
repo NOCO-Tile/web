@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/web',
-  assetPrefix: '/web',
+  basePath: process.env.NODE_ENV === 'production' ? '/web' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/web' : '',
   typescript: {
     ignoreBuildErrors: true,
   },
