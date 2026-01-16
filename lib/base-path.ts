@@ -1,5 +1,5 @@
-// Helper function for asset paths
-// No base path needed - GitHub Pages serves from /web/ automatically based on repo name
+// Helper function for asset paths in public directory
+// Public assets need the /web prefix for GitHub Pages
 export function assetPath(path: string): string {
-  return path
+  return `/web${path}`
 }
