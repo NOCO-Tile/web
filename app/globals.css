@@ -128,3 +128,25 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Lightbox performance optimizations */
+@layer utilities {
+  /* Hardware acceleration for smooth animations */
+  .touch-manipulation {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Prevent layout shifts in dialogs */
+  [data-slot="dialog-content"] {
+    contain: layout style paint;
+    will-change: transform, opacity;
+  }
+
+  /* Mobile viewport fix for dialogs */
+  @supports (height: 100dvh) {
+    [data-slot="dialog-content"] {
+      max-height: 100dvh;
+    }
+  }
+}
