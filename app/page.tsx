@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Header } from "@/components/header"
+import { Logo } from "@/components/logo"
 import { PortfolioLightbox } from "@/components/portfolio-lightbox"
 import { Phone, Mail } from "lucide-react"
 import Image from "next/image"
@@ -206,7 +207,9 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="py-12 bg-muted/50">
         <div className="container mx-auto px-4 text-center">
-          <div className="text-3xl font-bold mb-4">NOCO Tile</div>
+          <div className="flex justify-center mb-4">
+            <Logo />
+          </div>
           <p className="text-muted-foreground mb-6">Serving Northern Colorado with Excellence</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm text-muted-foreground">
             <a href="tel:9706858897" className="hover:text-foreground transition-colors">

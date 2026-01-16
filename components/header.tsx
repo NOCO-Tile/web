@@ -3,6 +3,7 @@
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Button } from "@/components/ui/button"
 import { Phone } from "lucide-react"
+import { Logo } from "@/components/logo"
 
 export function Header() {
   return (
@@ -10,7 +11,7 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="text-2xl font-bold text-foreground">NOCO Tile</div>
+          <Logo />
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-8">
