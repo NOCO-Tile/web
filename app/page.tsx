@@ -8,43 +8,23 @@ import { Phone, Mail } from "lucide-react"
 import Image from "next/image"
 import { assetPath } from "@/lib/base-path"
 
+// Curated selection of 15 best portfolio images from the full collection of 51
 const portfolioItems = [
-  {
-    image: "/images/hero-bathroom.jpg",
-    alt: "Modern bathroom with elegant tile work",
-    title: "Modern Master Bath",
-    location: "Fort Collins, CO"
-  },
-  {
-    image: "/images/bathroom-modern.jpg",
-    alt: "Contemporary bathroom renovation",
-    title: "Contemporary Bathroom",
-    location: "Loveland, CO"
-  },
-  {
-    image: "/images/kitchen-backsplash.jpg",
-    alt: "Custom kitchen backsplash",
-    title: "Kitchen Backsplash",
-    location: "Greeley, CO"
-  },
-  {
-    image: "/images/floor-tile.jpg",
-    alt: "Beautiful floor tile installation",
-    title: "Living Room Flooring",
-    location: "Windsor, CO"
-  },
-  {
-    image: "/images/hero-bathroom.jpg",
-    alt: "Shower tile project",
-    title: "Custom Shower",
-    location: "Fort Collins, CO"
-  },
-  {
-    image: "/images/kitchen-backsplash.jpg",
-    alt: "Entryway tile design",
-    title: "Entryway Feature",
-    location: "Loveland, CO"
-  }
+  { image: "/images/portfolio-01.jpg", alt: "Professional tile installation", title: "Bathroom Tile Work", location: "Fort Collins, CO" },
+  { image: "/images/portfolio-05.jpg", alt: "Professional tile installation", title: "Custom Shower Design", location: "Loveland, CO" },
+  { image: "/images/portfolio-08.jpg", alt: "Professional tile installation", title: "Kitchen Backsplash", location: "Greeley, CO" },
+  { image: "/images/portfolio-11.jpg", alt: "Professional tile installation", title: "Floor Tile Installation", location: "Windsor, CO" },
+  { image: "/images/portfolio-15.jpg", alt: "Professional tile installation", title: "Master Bath Renovation", location: "Fort Collins, CO" },
+  { image: "/images/portfolio-19.jpg", alt: "Professional tile installation", title: "Decorative Tile Pattern", location: "Loveland, CO" },
+  { image: "/images/portfolio-23.jpg", alt: "Professional tile installation", title: "Shower Surround", location: "Greeley, CO" },
+  { image: "/images/portfolio-27.jpg", alt: "Professional tile installation", title: "Kitchen Remodel", location: "Windsor, CO" },
+  { image: "/images/portfolio-31.jpg", alt: "Professional tile installation", title: "Bathroom Accent Wall", location: "Fort Collins, CO" },
+  { image: "/images/portfolio-35.jpg", alt: "Professional tile installation", title: "Elegant Flooring", location: "Loveland, CO" },
+  { image: "/images/portfolio-39.jpg", alt: "Professional tile installation", title: "Contemporary Bath", location: "Greeley, CO" },
+  { image: "/images/portfolio-43.jpg", alt: "Professional tile installation", title: "Tile Feature Wall", location: "Windsor, CO" },
+  { image: "/images/portfolio-46.jpg", alt: "Professional tile installation", title: "Modern Shower", location: "Fort Collins, CO" },
+  { image: "/images/portfolio-49.jpg", alt: "Professional tile installation", title: "Luxury Bath Design", location: "Loveland, CO" },
+  { image: "/images/portfolio-51.jpg", alt: "Professional tile installation", title: "Custom Tile Work", location: "Greeley, CO" },
 ]
 
 export default function HomePage() {
