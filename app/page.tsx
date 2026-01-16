@@ -3,9 +3,49 @@
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Header } from "@/components/header"
+import { PortfolioLightbox } from "@/components/portfolio-lightbox"
 import { Phone, Mail } from "lucide-react"
 import Image from "next/image"
 import { assetPath } from "@/lib/base-path"
+
+const portfolioItems = [
+  {
+    image: "/images/hero-bathroom.jpg",
+    alt: "Modern bathroom with elegant tile work",
+    title: "Modern Master Bath",
+    location: "Fort Collins, CO"
+  },
+  {
+    image: "/images/bathroom-modern.jpg",
+    alt: "Contemporary bathroom renovation",
+    title: "Contemporary Bathroom",
+    location: "Loveland, CO"
+  },
+  {
+    image: "/images/kitchen-backsplash.jpg",
+    alt: "Custom kitchen backsplash",
+    title: "Kitchen Backsplash",
+    location: "Greeley, CO"
+  },
+  {
+    image: "/images/floor-tile.jpg",
+    alt: "Beautiful floor tile installation",
+    title: "Living Room Flooring",
+    location: "Windsor, CO"
+  },
+  {
+    image: "/images/hero-bathroom.jpg",
+    alt: "Shower tile project",
+    title: "Custom Shower",
+    location: "Fort Collins, CO"
+  },
+  {
+    image: "/images/kitchen-backsplash.jpg",
+    alt: "Entryway tile design",
+    title: "Entryway Feature",
+    location: "Loveland, CO"
+  }
+]
 
 export default function HomePage() {
   return (
@@ -152,97 +192,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-            <Card className="overflow-hidden group cursor-pointer">
-              <div className="aspect-square relative overflow-hidden">
-                <Image
-                  src={assetPath("/images/hero-bathroom.jpg")}
-                  alt="Modern bathroom with elegant tile work"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="font-semibold text-lg">Modern Master Bath</h3>
-                <p className="text-sm text-muted-foreground">Fort Collins, CO</p>
-              </div>
-            </Card>
-
-            <Card className="overflow-hidden group cursor-pointer">
-              <div className="aspect-square relative overflow-hidden">
-                <Image
-                  src={assetPath("/images/bathroom-modern.jpg")}
-                  alt="Contemporary bathroom renovation"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="font-semibold text-lg">Contemporary Bathroom</h3>
-                <p className="text-sm text-muted-foreground">Loveland, CO</p>
-              </div>
-            </Card>
-
-            <Card className="overflow-hidden group cursor-pointer">
-              <div className="aspect-square relative overflow-hidden">
-                <Image
-                  src={assetPath("/images/kitchen-backsplash.jpg")}
-                  alt="Custom kitchen backsplash"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="font-semibold text-lg">Kitchen Backsplash</h3>
-                <p className="text-sm text-muted-foreground">Greeley, CO</p>
-              </div>
-            </Card>
-
-            <Card className="overflow-hidden group cursor-pointer">
-              <div className="aspect-square relative overflow-hidden">
-                <Image
-                  src={assetPath("/images/floor-tile.jpg")}
-                  alt="Beautiful floor tile installation"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="font-semibold text-lg">Living Room Flooring</h3>
-                <p className="text-sm text-muted-foreground">Windsor, CO</p>
-              </div>
-            </Card>
-
-            <Card className="overflow-hidden group cursor-pointer">
-              <div className="aspect-square relative overflow-hidden">
-                <Image
-                  src={assetPath("/images/hero-bathroom.jpg")}
-                  alt="Shower tile project"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="font-semibold text-lg">Custom Shower</h3>
-                <p className="text-sm text-muted-foreground">Fort Collins, CO</p>
-              </div>
-            </Card>
-
-            <Card className="overflow-hidden group cursor-pointer">
-              <div className="aspect-square relative overflow-hidden">
-                <Image
-                  src={assetPath("/images/kitchen-backsplash.jpg")}
-                  alt="Entryway tile design"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="font-semibold text-lg">Entryway Feature</h3>
-                <p className="text-sm text-muted-foreground">Loveland, CO</p>
-              </div>
-            </Card>
-          </div>
+          <PortfolioLightbox items={portfolioItems} />
         </div>
       </section>
 
