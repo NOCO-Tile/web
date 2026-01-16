@@ -17,7 +17,7 @@ export function Logo() {
   // Show placeholder during SSR/hydration to prevent layout shift
   if (!mounted) {
     return (
-      <div className="h-24 w-auto" aria-label="NOCO Tile Co">
+      <div className="h-24 w-auto" aria-label="NOCO Tile">
         <div className="h-full w-24 bg-transparent" />
       </div>
     )
@@ -32,11 +32,11 @@ export function Logo() {
     <a
       href="#"
       className="h-24 w-auto flex items-center"
-      aria-label="NOCO Tile Co - Return to top"
+      aria-label="NOCO Tile - Return to top"
     >
       <Image
         src={logoSrc}
-        alt="NOCO Tile Co"
+        alt="NOCO Tile"
         height={96}
         width={96}
         className="h-full w-auto brightness-[0.3] contrast-[1.2] dark:brightness-100 dark:contrast-100"

@@ -194,11 +194,11 @@ export default function HomePage() {
             </a>
             <span className="hidden sm:inline text-2xl opacity-50">|</span>
             <a
-              href="mailto:info@mysite.com"
+              href="mailto:eric@nocotileco.com"
               className="flex items-center gap-2 text-xl font-semibold hover:opacity-80 transition-opacity"
             >
               <Mail className="w-6 h-6" />
-              info@mysite.com
+              eric@nocotileco.com
             </a>
           </div>
         </div>
@@ -211,18 +211,21 @@ export default function HomePage() {
             <Logo />
           </div>
           <p className="text-muted-foreground mb-6">Serving Northern Colorado with Excellence</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm text-muted-foreground">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm text-muted-foreground mb-4">
             <a href="tel:9706858897" className="hover:text-foreground transition-colors">
               (970) 685-8897
             </a>
             <span className="hidden sm:inline">•</span>
-            <a href="mailto:info@mysite.com" className="hover:text-foreground transition-colors">
-              info@mysite.com
+            <a href="mailto:eric@nocotileco.com" className="hover:text-foreground transition-colors">
+              eric@nocotileco.com
             </a>
           </div>
+          <p className="text-sm text-muted-foreground">
+            1790 Vantage Parkway, Berthoud, CO 80513
+          </p>
           <div className="mt-8 pt-8 border-t border-border">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} NOCO Tile Co. All rights reserved.
+              © {new Date().getFullYear()} NOCO Tile. All rights reserved.
             </p>
           </div>
         </div>

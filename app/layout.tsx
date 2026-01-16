@@ -9,7 +9,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "NOCO Tile Co | Expert Tile Installation in Northern Colorado",
+  title: "NOCO Tile | Expert Tile Installation in Northern Colorado",
   description:
     "Transforming spaces across Northern Colorado into dreams. 20+ years of experience in tile installation for bathrooms, kitchens, and more.",
   generator: "v0.app",
