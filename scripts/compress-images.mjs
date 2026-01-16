@@ -38,11 +38,11 @@ async function compressImage(filePath) {
 
     // Compress based on file type
     if (ext === '.jpg' || ext === '.jpeg') {
-      // Compress JPEG to 80% quality, progressive
-      await execAsync(`npx sharp-cli -i "${filePath}" -o "${filePath}" -q 80 -p`);
+      // Compress JPEG to 80% quality, progressive, and auto-rotate based on EXIF
+      await execAsync(`npx sharp-cli -i "${filePath}" -o "${filePath}" --autoOrient -q 80 -p`);
     } else if (ext === '.png') {
-      // Compress PNG to 80% quality
-      await execAsync(`npx sharp-cli -i "${filePath}" -o "${filePath}" -q 80`);
+      // Compress PNG to 80% quality and auto-rotate based on EXIF
+      await execAsync(`npx sharp-cli -i "${filePath}" -o "${filePath}" --autoOrient -q 80`);
     }
 
     // Get new size
