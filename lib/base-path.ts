@@ -1,8 +1,5 @@
-// Helper to get the base path for static assets
-// Only use /web in production (for GitHub Pages), empty string in development
-export const BASE_PATH = process.env.NODE_ENV === 'production' ? '/web' : ''
-
-// Helper function to prepend base path to asset URLs
+// Helper function for asset paths
+// No base path needed - GitHub Pages serves from /web/ automatically based on repo name
 export function assetPath(path: string): string {
-  return `${BASE_PATH}${path}`
+  return path
 }

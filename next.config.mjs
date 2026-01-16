@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  // Only use basePath in production (for GitHub Pages deployment)
-  basePath: process.env.NODE_ENV === 'production' ? '/web' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/web' : '',
+  // No basePath needed - GitHub Pages serves from /web/ automatically based on repo name
   typescript: {
     ignoreBuildErrors: true,
   },
